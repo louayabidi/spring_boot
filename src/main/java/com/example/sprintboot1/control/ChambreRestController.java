@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping("/chambre")
 public class ChambreRestController {
     IChambreService chambreService;
-    // http://localhost:8089/tpfoyer/chambre/retrieve-all-chambres
+    // http://localhost:8089/tpfoyer/chambre/retrieve-all-chambres //use this url 
     @GetMapping("/retrieve-all-chambres")
     public List<Chambre> getChambres() {
         List<Chambre> listChambres = chambreService.retrieveAllChambres();
